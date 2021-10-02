@@ -1,596 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Fira+Sans&display=swap"
-        rel="stylesheet">
-    <style>
-        * {
-            font-family: 'Fira Sans', sans-serif;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'El Messiri', sans-serif;
-        }
-
-        .custom-tooltip {
-            position: relative;
-            display: inline-block;
-            background-color: rgba(173, 216, 230, 0.4);
-            border-radius: 3px;
-            padding-left: 5px;
-            padding-right: 5px;
-            margin-top: 3px;
-            margin-bottom: 3px;
-            -webkit-user-select: none; /* Safari */        
-            -moz-user-select: none; /* Firefox */
-            -ms-user-select: none; /* IE10+/Edge */
-            user-select: none; /* Standard */
-        }
-
-        .custom-tooltip .custom-tooltip-text {
-            visibility: hidden;
-            width: 120px;
-            background-color: lightskyblue;
-            border: rgba(0, 0, 0, 0.2) 2px solid;
-            text-align: center;
-            padding: 5px 5px;
-            border-radius: 6px;
-            position: absolute;
-            z-index: 1;
-            width: 240px;
-            bottom: 120%;
-            left: 50%;
-            margin-left: -120px;
-            opacity: 0;
-            transition: opacity 0.5s;
-            -webkit-user-select: none; /* Safari */        
-            -moz-user-select: none; /* Firefox */
-            -ms-user-select: none; /* IE10+/Edge */
-            user-select: none; /* Standard */
-        }
-
-        .custom-tooltip:hover .custom-tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
-
-        .custom-tooltip .custom-tooltip-text::after {
-            content: " ";
-            position: absolute;
-            top: 100%; /* At the bottom of the tooltip */
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color:  rgba(0, 0, 0, 0.2) transparent transparent transparent;
-        }
-        
-        @media (min-width: 576px) {
-            .modal-dialog {
-                max-width: 70vw;
-            }
-        }
-    </style>
-    <title>Ψ | In The Willows</title>
+  <meta charset="UTF-8">
+  <title>Элиза Киселёва</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row my-3">
-            <div class="col-12 col-md-4 py-3 py-md-0 text-center text-md-right my-auto">
-                <h1>Я специализируюсь на работе с зависимостями,</h1>
-                <p> 
-                    от наркотической до любовной.
-                    Основа моего подхода заключается в том, что наркомания это не болезнь, а симптом. <br> 
-                    Симптом того, что в жизни пошло что-то не так.  <br>
-                    Люди в депрессии могут злоупотреблять стимуляторами, люди с социофобией эйфоретиками, а люди с тревожным расстройством могут зависеть от седативных препаратов.
-                    Соответственно работать нужно не только над выходом из употребления, но и с корнем проблем.<br>
-
-                  
-                </p>
-            </div>
-            <div class="col-12 col-md-4 py-3 py-md-0">
-                <img src="./eliza.jpg"
-                    class="img-fluid"
-                    alt="Responsive image"
-                    style="border-radius: 3px;">
-            </div>
-            <div class="col-12 col-md-4 py-3 py-md-0 text-center text-md-left my-auto" id="contacts">
-                <h1 class="mt-0">Элиза Киселёва</h1>
-                <p>Психолог-практик</p>
-                <div class="mb-0 container-fluid">
-                    <div class="row py-2">
-                        <img class="pr-2" src="./icons/telegram.png" style="height: 2em;" alt="Telegram">
-                        <a href="https://t.me/elizasalander" style="margin-top: auto; margin-bottom: auto;">elizasalander</a>
-                    </div>
-                    <!--
-                    <div class="row py-2">
-                        <img class="pr-2" src="./icons/phone.png" style="height: 2em;" alt="Телефон">
-                        <a href="tel://+79151712879" style="margin-top: auto; margin-bottom: auto;">+7&nbsp;915&nbsp;171&nbsp;28&nbsp;79</a>
-                    </div> -->
-                </div>
-            </div>
+  <header class="page-header">
+    <a href="index.html" class="page-header__link">
+      <h1 class="page-header__logo">
+        Элиза Киселёва
+      </h1>
+    </a>
+    <nav class="page-header__nav">
+      <ul class="page-header__nav-list">
+        <li class="page-header__nav-list-item">
+          <a href="index.html" class="page-header__nav-list-item-link page-header__nav-list-item-link--active">Обо мне</a>
+        </li>
+        <li class="page-header__nav-list-item">
+          <a href="reviews.html" class="page-header__nav-list-item-link">Отзывы</a></li>
+        <li class="page-header__nav-list-item">
+          <a href="certificate.html" class="page-header__nav-list-item-link">Сертификаты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="about-me">
+      <div class="about-me__left">
+        <img src="assets/img/eliza.png" alt="Элиза" class="about-me__img">
+      </div>
+      <div class="about-me__right">
+        <h2 class="title-section">Я специализируюсь на работе с зависимостями,</h2>
+        <p class="about-me__descr">от наркотической до любовной. Основа моего подхода заключается в том, что наркомания
+          это не болезнь, а симптом. Симптом того, что в жизни пошло что-то не так. Люди в депрессии могут
+          злоупотреблять стимуляторами, люди с социофобией эйфоретиками, а люди с тревожным расстройством могут зависеть
+          от седативных препаратов. Соответственно работать нужно не только над выходом из употребления, но и с корнем
+          проблем.</p>
+        <h3 class="title-section title-section--s">Связь со мной</h3>
+        <div class="about-me__social">
+          <a href="" class="about-me__social-item about-me__social-item--telegram">Telegram</a>
+          <a href="" class="about-me__social-item about-me__social-item--tiktok">Tiktok</a>
         </div>
-        <div class="row my-3">
-            <div class="col-12 col-md-4 py-3 py-md-0 px-5 text-center my-auto">
-                <h3>Я работаю с </h3>
-                <div class="custom-tooltip">
-                    депрессией
-                    <span class="custom-tooltip-text">
-                        постоянно сниженное настроение
-                        и полная или частичная утрата
-                        способности получать удовольствие
-                    </span>
-                </div>,
-                <div class="custom-tooltip">
-                    тревожностью
-                    <span class="custom-tooltip-text">
-                        склонность часто переживать сильную тревогу
-                    </span>
-                </div>,
-                <div class="custom-tooltip">
-                    паническими атаками
-                    <span class="custom-tooltip-text">
-                        необъяснимые мучительные приступы тяжёлой тревоги,
-                        сопровождаемые беспричинным страхом в сочетании с
-                        различными физическими симптомами.
-                    </span>
-                </div>,
-                <div class="custom-tooltip">
-                    бессоницей
-                    <span class="custom-tooltip-text">
-                        неспособность уснуть и/или плохое качество сна,
-                        постоянное ощущение недостатка сна    
-                    </span>
-                </div>, зависимостями <br>
-                (
-                <span class="custom-tooltip">
-                    наркотической
-                    <span class="custom-tooltip-text">
-                        патологическое влечение к употреблению наркотических веществ,
-                        часто сопровождающееся различными расстройствами.
-                    </span>
-                </span>,
-                <span class="custom-tooltip">
-                    алкогольной
-                    <span class="custom-tooltip-text">
-                        пристрастие к алкоголю с психической и физической
-                        зависимостью от него
-                    </span>
-                </span>
-                и
-                <span class="custom-tooltip">
-                    любовной
-                    <span class="custom-tooltip-text">
-                        болезненная сильная страсть, зависимость от
-                        романтических отношений с человеком
-                    </span>
-                </span>
-                ).<br>
-                Вы можете обратиться ко мне, если вы думаете, что
-                у близкого вам человека есть такие проблемы.
-                Часто семья или друзья хотят помочь,
-                но не знают, как, и в худшем случае предпринимают
-                действия, которые <b>могут навредить.</b>
-            </div>
-            <div class="col-12 col-md-4 py-3 py-md-0 px-5 text-center my-auto">
-                Также я работаю с <br>
-                <span class="custom-tooltip">
-                    токсичными
-                    <span class="custom-tooltip-text">
-                        взаимодействие между людьми,
-                        приносящее эмоциональную боль и
-                        истощение ресурсов как минимум одной из сторон.
-                    </span>
-                </span>
-                ,
-                <span class="custom-tooltip">
-                    абьюзивными
-                    <span class="custom-tooltip-text">
-                        уничижительные взаимоотношения,
-                        которые сопровождаются постоянными манипуляциями
-                        (например, с помощью денег, шантажа, угроз и рукоприкладства),
-                        а также моральным издевательством со стороны агрессора.
-                    </span>
-                </span>
-                и
-                <span class="custom-tooltip">
-                    созависимыми
-                    <span class="custom-tooltip-text">
-                        нездоровая привязанность одного человека к другому
-                    </span>
-                </span>
-                отношениями -
-                притом как с жертвой (которой могу помочь обрести субъектность),
-                так и с абьюзером (который на самом деле страдает не меньше, но в ином ключе).
-                <br><br>
-                Параллельно с личной терапией я прохожу 
-                <span class="custom-tooltip">
-                    супервизию
-                    <span class="custom-tooltip-text">
-                        консультации, на которых психолог обсуждает клиентов с коллегой
-                        для своевременного выявления недочетов в работе
-                    </span>
-                </span>.
-
-            </div>
-            <div class="col-12 col-md-4 py-3 py-md-0 px-5 text-center my-auto">
-                Ко мне <b>можно</b> обратиться, если нет очевидных проблем,
-                но есть чувство неудовлетворенности от жизни, ощущение
-                запутанности. Если в отношениях все было хорошо,
-                а теперь не очень, и непонятно, что случилось.
-                Вопреки популярному мнению, гласящему,
-                что психолог не работает без запроса,
-                я считаю, что, напротив, одна из самых важных задач психолога
-                - на самой первой сессии помочь клиенту сформировать запрос.
-            </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="work__content">
+        <h2 class="title-section">
+          Я работаю с
+        </h2>
+        <ul class="work__list">
+          <li class="work__list-item">Депрессией</li>
+          <li class="work__list-item">Выгоранием</li>
+          <li class="work__list-item">Социофобией</li>
+          <li class="work__list-item">Бессонницей</li>
+          <li class="work__list-item">Прокрастинацией</li>
+          <li class="work__list-item">Селфхармом</li>
+          <li class="work__list-item">Тревогой</li>
+          <li class="work__list-item">Самоактуализацией</li>
+          <li class="work__list-item">Абьюзом</li>
+          <li class="work__list-item">Паническими атаками</li>
+          <li class="work__list-item">Умением отдыхать</li>
+          <li class="work__list-item">Границами</li>
+        </ul>
+        <p class="work__ps">
+          <sup>*</sup>Если я почувствую, что с вашим запросом я эффективно работать не могу, то я направлю вас к другому
+          специалисту.
+        </p>
+      </div>
+    </section>
+    <blockquote class="blockquote">
+      <p class="blockquote__content">
+        Основная моя задача это научить клиента быть терапевтом
+        для самого себя и жить без моей помощи.
+      </p>
+    </blockquote>
+    <section class="skills">
+      <h2 class="title-section">Немного о моём опыте</h2>
+      <p class="skills__text">Я учусь на 3 курсе РГСУ (общая психология) При этом мне 30 лет.
+        Я самостоятельно занимаюсь психологией с 2014 года и за это время я обрела широкий круг компетенций. Я закончила
+        курсы когнитивно-поведенческой терапии. Сейчас изучаю функциональный анализ поведения и терапию принятия и
+        ответственности. Это универсальные инструменты, имеющие доказательную <a href="#">базу</a>. Также я регулярно повышаю квалификацию, путем прохождения семинаров и курсов.
+      </p>
+      <p class="skills__text">Полгода я вела группу поддержки для геев и мсм на базе Фонда Андрея Рылькова. <br>
+        Я являюсь лгбт/фем/секс-ворк френдли психологом.</p>
+      <p class="skills__text">Также веду в Тиктоке <a href="#">блог</a> посвященный вопросу зависимостей.</p>
+      <p class="skills__text">У меня больше 110 часов личной терапии (для практикующего психолога минимум - 50). На данный момент я прохожу и личную терапию, и супервизию. Мой супервизор Иван Чистяков, клинический психолог, психотерапевт, поведенческий аналитик. 
+      </p>
+      <p class="skills__text">Свою практику я начала в апреле 2020 года.</p>
+    </section>
+    <section class="price">
+      <div class="price__content">
+        <h2 class="title-section">Стоимость работы</h2>
+        <div class="price__bunch">
+          <div class="price__item">
+            <h3 class="title-section title-section--s price__item-title">Дистанционно</h3>
+            <p class="price__descr">
+              <u>2000р/55минут</u>. (от вас требуется быть в комфортном помещении одному (можно в машине, но не за рулем
+              и на
+              улице, но не находу) со стабильным интернетом и камерой. Визуальный контакт это важно. Для связи я обычно
+              использую зум.
+            </p>
+          </div>
+          <div class="price__item">
+            <h3 class="title-section title-section--s price__item-title">Очно</h3>
+            <p class="price__descr">
+              <u>2500р/55 минут</u>. Территориально Москва, Чистые пруды, Уланский переулок, дом 11А
+            </p>
+          </div>
         </div>
-        <div class="row my-5">
-            <div class="col-12 col-md-4 py-3 py-md-0 text-center my-auto">
-                <h2>Немного о моём опыте</h2>
-                Я занимаюсь психологией с 2014 года,
-                и за это время я приобрела широкий круг компетенций.
-                За 6 лет я на себе освоила
-                <span class="custom-tooltip">
-                    когнитивно-поведенческую терапию,
-                    <span class="custom-tooltip-text">
-                        краткосрочное, сфокусированное на навыках лечение,
-                        направленное на изменение неадаптивных эмоциональных
-                        реакций при помощи изменения мыслей,
-                        изменения поведения пациента либо изменения того и другого
-                    </span>
-                </span>
-                а сейчас я углубилась в
-                <span class="custom-tooltip">
-                    функциональный анализ поведения,
-                    <span class="custom-tooltip-text">
-                        выделение факторов окружающей среды,
-                        влияющих на формирование поведения
-                    </span>
-                </span>
-                который в отдельных кейсах показывает себя лучше, чем КПТ.
-                Также во многих аспектах я использую
-                <span class="custom-tooltip">
-                    феноменологический подход
-                    <span class="custom-tooltip-text">
-                        подход, где главным является не поведение,
-                        а содержание воспринимающего и переживающего сознания:
-                        что я у себя в сознании вижу и как я это переживаю
-                    </span>
-                </span>
-                и
-                <span class="custom-tooltip">
-                    критическое мышление.
-                    <span class="custom-tooltip-text">
-                        система суждений, которая используется для анализа вещей
-                        и событий с формулированием обоснованных выводов
-                    </span>
-                </span>
-                У меня больше 110 часов личной терапии (для практикующего
-                психолога минимум - 50).
-                В данный момент я учусь на психолога в РАНХиГС и регулярно
-                читаю статьи и книги по своей специальности.
-            </div>
-            <div class="col-12 col-md-4 py-3 py-md-0 px-5 text-center my-auto">
-                <h2>
-                    Чем я НЕ занимаюсь?
-                </h2>
-                Я не работаю с расстройствами шизофренического спектра,
-                деменцией различного генеза, расстройствами аутического
-                спектра, коммуникативными расстройствами,
-                а также с людьми младше 16 лет.
-                <br><br>
-                Если я почувствую, что с вашим запросом я эффективно
-                работать не могу, то я направлю вас к другому специалисту.
-            </div>
-            <div class="col-12 col-md-4 py-3 py-md-0 text-center my-auto">
-                <h2>
-                    В период карантина
-                </h2>
-                консультации будут проходить по Skype и Zoom.
-                <b>Обязательно</b> наличие камеры и гарнитуры у клиента,
-                так как во время консультации очень важно качественно
-                передать изображение и звук: для терапевта мимика и интонации -
-                это серьезный источник информации.
-            </div>
-        </div>
-        <div class="row my-5">
-            <div class="col-12 col-md-4 py-3 py-md-0">
-                <div class="jumbotron text-center text-md-left">
-                    <h1 class="display-4">Цены</h1>
-                    <p class="lead">Дистанционная консультация стоит 1500 российских рублей. Продолжительност 55 минут.</p>
-                    <hr class="my-4">
-                    <p>
-                        Очная консультация стоит 2000р/55 минут. Территориально: Москва, Чистые пруды
-                    </p>
-                    <a class="btn btn-primary" href="#contacts" role="button">Вернуться к моим контактам</a>
-                </div>
-            </div>
-            <div class="col-12 col-md-8">
-                <div class="jumbotron text-center text-md-right">
-                    <h1 class="display-4">Отзывы</h1>
-                    <hr class="my-4">
-                    <p><i>(орфография и пунктуация в отзывах сохранены)</i></p>
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <div class="card my-3">
-                                    <img src="./slava.jpg" class="card-img-top" alt="Слава Лювалин">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Слава Лювалин</h5>
-                                        <p class="card-text">XLNT agency</p>
-                                        <button type="button"
-                                            class="btn btn-sm btn-outline-secondary"
-                                            data-toggle="modal"
-                                            data-target="#slava">
-                                            Читать отзыв
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="card my-3">
-                                    <img src="./anya.jpg" class="card-img-top" alt="Анна Кушнирская">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Анна Кушнирская</h5>
-                                        <p class="card-text">Психолог</p>
-                                        <button type="button"
-                                            class="btn btn-sm btn-outline-secondary"
-                                            data-toggle="modal"
-                                            data-target="#anya">
-                                            Читать отзыв
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="card my-3">
-                                    <img src="./anon.jpg" class="card-img-top" alt="Аноним">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Анонимный отзыв</h5>
-                                        <p class="card-text">&nbsp;</p>
-                                        <button type="button"
-                                            class="btn btn-sm btn-outline-secondary"
-                                            data-toggle="modal"
-                                            data-target="#anon">
-                                            Читать отзыв
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modals -->
-
-    <div class="modal fade" id="slava" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">[Forwarded from Slava Lyuvalin]</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Я познакомился с Элизой в период жизни,
-                        когда только начинал употреблять наркотики,
-                        а по сути своей был ребенком, строящим из себя большого,
-                        взрослого и опытного дядю. Мы регулярно общались,
-                        в том числе о том, что нам интересно в жизни.
-                        Когда речь заходила о психологии, по этическим причинам,
-                        Элиза никогда не проводила мне консультаций.
-                        Но тем не менее она рассказывала мне многое о том,
-                        где можно посмотреть на мир иначе,
-                        а какие вещи и вовсе неверны.
-                        Долгое время я воспринимал её слова в штыки,
-                        часто игнорировал сказанное, но тем не менее
-                        её прогнозы и предупреждения сбывались.
-                        Очень сложно вспоминать конкретные кейсы,
-                        некоторые моменты слишком личные,
-                        но тем не менее общение с ней привело к нескольким вещам:
-                    </p>
-                    <p>
-                        Я сначала стал меньше, потом делал всё большие перерывы в употреблении,
-                        а потом и вовсе перестал употреблять.
-                        Она оказывала очень много поддержки в этом,
-                        что помогло справиться с проблемой.
-                    </p>
-                    <p>
-                        Элиза остановила меня от консультаций с некомпетентным психологом,
-                        объясним опасность консультаций с ним,
-                        чем в долгосрочной перспективе сильно спасла моё психическое состояние.
-                    </p>
-                    <p>
-                        Особенно я хочу отметить то, что очень помогло
-                        и что я очень в Элизе ценю - аналитическое мышление.
-                        Каким бы не был вопрос или проблема она подходит к решению,
-                        а не к дальнейшему размусоливанию проблемы.
-                    </p>
-                    <p>
-                        Элиза помогла мне понять важные вещи
-                        про самого себя и про отношения с людьми.
-                        Сейчас я получаю помощь от компетентного специалиста,
-                        перестал употреблять наркотики и строю равные
-                        и доверительные отношения с близкими людьми.
-                        Я рад, что она есть в моей жизни, но мне жаль,
-                        что из-за природы наших отношений консультации с ней не возможны. :)
-                        В силу того, чем занимаюсь по жизни, понимаю,
-                        что часто отзывы в интернете не настоящие
-                        в связи с чем Вы смело можете просить
-                        у Элизы мои контакты, чтобы я подтвердил выше сказанное.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="anya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">[Forwarded from Аня Кушнирская]</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Элиза умеет чутко слушать, быть внимательной, делать гипотезы,
-                        но оставаться не директивной и опираться, в первую очередь,
-                        на человека, а не свои догадки.
-                    </p>
-                    <p>
-                        А ещё Элиза всегда за научный подход и критическое мышление,
-                        а это значит, что если она чего-то не знает,
-                        она не станет опираться просто на свои взгляды/домыслы/жизненный опыт,
-                        а пойдёт и почитает про это научные источники.
-                    </p>
-                    <p>
-                        У неё очень широкий кругозор, огромный личный опыт
-                        взаимодействия с разными ситуациями и людьми,
-                        все это делает ее очень взвешенным и открытым человеком,
-                        который знает границы своей компетенции и никогда не будет
-                        «разводить» клиента, если видит,
-                        что ему нужна помощь других специалистов.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="anon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">[Forwarded from ???]</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Я детально помню две ситуации, в которых разговор с тобой был очень
-                    </p>
-                    <p>
-                        А. Полезен (помог избавиться от тревоги или
-                        перевести фокус внимания с самокопания на поиск ответов)
-                    </p>
-                    <p>
-                        Б. Расковырял мне мозг и душу
-                    </p>
-                    <p>
-                        В. В перспективе очень помог.
-                    </p>
-                    <p>
-                        Ситуация 1.
-                    </p>
-                    <p>
-                        Я не совсем помню как и почему мы оказались одни в коридоре [НАЗВАНИЕ ВУЗА].
-                        Я тогда сильно переживала из-за отношений с А.
-                        Мы вроде как были подруги, но всё сложно. Сначала ей нравилась я.
-                        А потом, но уже поздновато, я почувствовала, что влюбляюсь...
-                    </p>
-                    <p>
-                        В общем, я едва ли могла мыслить здраво,
-                        а от раздрая в чувствах я была в смятении.
-                    </p>
-                    <p>
-                        Сначала мне было неловко с тобой это обсуждать.
-                        Во-первых, я вообще про это никому не говорила.
-                        Во-вторых, мы с тобой, кажется, почти не общались на тот момент.
-                        Но ты очень быстро расположила к себе. Я почувствовала,
-                        что с твоей стороны нет осуждения, а только мягкое принятие.
-                        Тебе можно довериться.
-                    </p>
-                    <p>
-                        Мы поговорили. Это был короткий разговор,
-                        в котором ты задавала очень верные вопросы.
-                        У меня все начало становиться по полочкам.
-                    </p>
-                    <p>
-                        Мне стало гораздо легче. Хотя прошло уже чуть больше трёх лет,
-                        я помню, как пережевала и металась до. И как спокойнее мне стало после.
-                    </p>
-                    <p>
-                        Перед описанием ситуации 2, маленькая заметка
-                    </p>
-                    <p>
-                        Мне очень помогает твой блог. В разные периоды жизни.
-                        Могу по полгода не заходить, а потом в один вечер окунуться
-                        в головой во все тексты.
-                        Ты открыто пишешь о том, что не встретишь больше нигде.
-                        И появляется ощущение, что со мной всё так.
-                        Все мои переживания нормальны и важны.
-                        Я нахожу в твоём блоге поддержку. Это очень ценно
-                    </p>
-                    <p>
-                        Ситуация 2
-                    </p>
-                    <p>
-                        Я переживала, что мне дико не нравится специальность,
-                        на которой я учусь. Ты сказала, что я могу уйти в академ,
-                        а могу вообще уйти из универа.
-                    </p>
-                    <p>
-                        Я была в ужасе от твоих слов!
-                    </p>
-                    <p>
-                        Но ты спросила, а на кой мне учеба? И я впервые ответила честно:
-                        бабушка с детства задалбливала учебой. Мне потребовалось ещё 2,5
-                        года и ~25 сессий с психологом, чтобы понять,
-                        что универ меня больше угнетает.
-                        Что вышка мне не нужна.
-                        И без всей этой херни я чувствую себя в разы лучше.
-                    </p>
-                    <p>
-                        (Это не отменяет самообразования, кучи лекций, книг и курсов.
-                        Нет. Я очень хочу учится и люблю. Но не в формате вышки)
-                    </p>
-                    <p>
-                        А началось все с той твоей фразы. И поддержки.
-                    </p>
-                    <p>
-                        И я смогла справиться ненадолго с тревогой, чтобы забрать
-                        доки из [НАЗВАНИЕ ВУЗА]. И чувствовать себя лучше
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+      Элиза Киселёва 2021
+  </footer>
+  <script src="js/app.min.js"></script>
 </body>
 
 </html>
